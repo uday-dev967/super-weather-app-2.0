@@ -64,6 +64,14 @@ const Favourites = () => {
 
     const renderSuccessView = () => {
         const {data} = apiFavResponse
+        
+        if (data.length === 0) {
+          return (
+            <div className="d-flex flex-row justify-content-center align-items-center">
+              <p className="m-5">YOU HAVE NO FAVOURITES!</p>
+            </div>
+          )
+        }
         return (
             <div className="container">
                 <ul className="row justify-content-center unorder-list">
