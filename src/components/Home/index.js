@@ -34,7 +34,7 @@ const Home = () => {
     useEffect(() => {
         setInterval(() => {
             const dateTime = new Date()
-            const month = dateTime.getMonth() 
+            const month = dateTime.getMonth() + 1
             const date = dateTime.getDate()
             
             const year = dateTime.getFullYear()
